@@ -4,7 +4,11 @@ Rails.application.routes.draw do
   resources :sessions, only: [:create]
   resources :registrations, only: [:create]
   resources :products
+  resources :cart_products, only: [:create, :destroy]
 
+  get 'cart', to: 'carts#show'
+  post 'checkout', to: 'carts#checkout'
+  put 'cart/clear', to: 'carts#clear'
   delete :logout, to: "sessions#logout"
   get :logged_in, to: "sessions#logged_in"
   root to: "static#home"
