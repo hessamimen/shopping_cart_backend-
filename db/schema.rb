@@ -12,9 +12,12 @@
 
 ActiveRecord::Schema.define(version: 2022_11_09_113230) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "cart_products", force: :cascade do |t|
-    t.integer "product_id", null: false
-    t.integer "cart_id", null: false
+    t.bigint "product_id", null: false
+    t.bigint "cart_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.boolean "purchased", default: false
@@ -23,7 +26,7 @@ ActiveRecord::Schema.define(version: 2022_11_09_113230) do
   end
 
   create_table "carts", force: :cascade do |t|
-    t.integer "user_id", null: false
+    t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_carts_on_user_id"
