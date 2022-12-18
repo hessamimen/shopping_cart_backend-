@@ -9,7 +9,7 @@ This is an online shopping store that you can buy various products in there.
 
 ## Instruction to run the App:
 
-1- Fork the Repository to your Github Account.
+1- Fork the Repository to your Github Account.<br />
 2- Clone the repisotry yo your local machine.
 3- Go to this directory by typing: cd shopping_cart_backend
 4- 'npm install' to initialize the local machine.
