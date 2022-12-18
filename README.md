@@ -13,7 +13,7 @@ This is an online shopping store that you can buy various products in there.
 2- Clone the repisotry yo your local machine.<br />
 3- Go to this directory: cd shopping_cart_backend.<br />
 4- 'npm install' to initialize the local machine.<br />
-5- 'rails db:create' to create database.
-6- 'rails db:migrate' to create database tables.
-7- 'rails s' to start the application and view it in your browser.
-8- The srver will start in 'http://localhost:3000'
+5- 'rails db:create' to create database.<br />
+6- 'rails db:migrate' to create database tables.<br />
+7- 'rails s' to start the application and view it in your browser.<br />
+8- The srver will start in 'http://localhost:3000'.<br />
