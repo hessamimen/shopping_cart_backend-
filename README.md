@@ -1,7 +1,7 @@
 ## The Online Shopping Cart Application Backend
 
 This is the backend of "shopping Cart" web app.
-You need to run this application to avtice the backend for the shopping cart frontend application.
+You need to run this application to activate the backend for the shopping cart frontend application.
 
 ## Summary
 
